@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Maximiliano Ivan de la Fuente</title>
+  </head>
+  <body>
+    <a id="inicio"></a>
+    <header class="head">
+      <div class="logo">
+        <img src="./src/image/perfil.jpg" alt=" foto de perfil" />
+      </div>
+      <div class="title">
+        <h1>Maximiliano Ivan de la Fuente</h1>
+        <h3>Front-end Dev</h3>
+        <h3>Estudiande de Ing. en Sistemas de Información</h3>
+      </div>
+      <div class="menu">
+        <nav id="nav" class="no_active">
+          <a href="#about_me"
+            ><ion-icon name="person-outline"></ion-icon>Sobre mi</a
+          >
+          <a href="#skills"
+            ><ion-icon name="headset-outline"></ion-icon>Conocimiento</a
+          >
+
+          <a href="#contac"
+            ><ion-icon name="paper-plane-outline"></ion-icon>Contacto</a
+          >
+          <a href="#jobs"
+            ><ion-icon name="construct-outline"></ion-icon>Trabajos</a
+          >
+          <a href="#study"
+            ><ion-icon name="school-outline"></ion-icon>Estudios</a
+          >
+        </nav>
+        <button id="boton"><ion-icon name="apps-outline"></ion-icon></button>
+      </div>
+    </header>
+    <main>
+      <section class="info">
+        <div id="about_me" class="about_me">
+          <h2>Sobre mi</h2>
+          <p>
+            Apasionado por la tecnología y la innovación, en 2017 inicié la
+            carrera de Ingeniería en Sistemas de Información, aprendiendo cada
+            día, superándome a mí mismo tanto a nivel personal, académico y
+            profesional. En 2020 me vi atraído por el desarrollo web. Considero
+            que el cambio es signo de la capacidad de superación, por lo cual
+            siempre estoy buscando nuevas formas de realizar el trabajo, nuevas
+            tecnologías, nuevas metodologías, innovando continuamente.
+          </p>
+        </div>
+        <div id="skills" class="skills">
+          <h2>Conocimiento</h2>
+          <ul>
+            <li class="skill">
+              <label>HTML</label>
+              <ion-icon name="logo-html5"></ion-icon>
+
+              <progress id="progresbar" max="100" value="70"></progress>
+            </li>
+            <li class="skill">
+              <label>CSS</label>
+              <ion-icon name="logo-css3"></ion-icon>
+
+              <progress id="progresbar" max="100" value="60"></progress>
+            </li>
+            <li class="skill">
+              <label>JavaScript</label>
+              <ion-icon name="logo-javascript"></ion-icon>
+
+              <progress id="progresbar" max="100" value="50"></progress>
+            </li>
+            <li class="skill">
+              <label>ReactJS</label>
+              <ion-icon name="logo-react"></ion-icon>
+
+              <progress id="progresbar" max="100" value="40"></progress>
+            </li>
+            <li class="skill">
+              <label>SASS</label>
+              <ion-icon name="logo-sass"></ion-icon>
+
+              <progress id="progresbar" max="100" value="30"></progress>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="content">
+        <div id="jobs" class="jobs">
+          <h1>Experiencia laboral</h1>
+          <div class="job">
+            <h3>Reparación y mantenimiento de PC</h3>
+            <h4>Municipalida del Dpto. Castro Barros</h4>
+            <p>
+              Reparación de equipos informaticos, redes y mantenimiento de
+              sistemas.
+            </p>
+          </div>
+          <div class="job">
+            <h3>Administrador de Red</h3>
+            <h4>Esc. Agropecuaria de Nivel Medio</h4>
+            <p>
+              Administración de la red escolar, administración de servidores,
+              Internet, Intranet, gestión de servidor web Apache, asistencia a
+              profesores y alumnos en el uso de las TIC, formación a profesores,
+              mantenimiento y reparación de equipos informáticos, uso de
+              impresoras 3D.
+            </p>
+          </div>
+          <div class="job">
+            <h3>Administrador de Red</h3>
+            <h4>Esc. Provincial Aminga</h4>
+            <p>
+              Administración de la red escolar, administración de servidores,
+              Internet, Intranet, asistencia a profesores y alumnos en el uso de
+              las TIC, formación a profesores, mantenimiento y reparación de
+              equipos informáticos.
+            </p>
+          </div>
+        </div>
+        <div id="study" class="studys">
+          <h1>Estudios adquiridos</h1>
+          <div class="study">
+            <h3>Reparación y mantenimiento de PC</h3>
+            <h4>Charless Babage</h4>
+            <p></p>
+          </div>
+          <div class="study">
+            <h3>Ingeniería en Sistemas de Información</h3>
+            <h4>Universidad Nacional de La Rioja</h4>
+            <p></p>
+          </div>
+          <div class="study">
+            <h3>Curso de desarrollo web Fullstack</h3>
+            <h4>Udemy</h4>
+            <p></p>
+          </div>
+          <div class="study">
+            <h3>Curso de Frontend</h3>
+            <h4>Plataforma D -Gobierno de La Rioja</h4>
+            <p></p>
+          </div>
+
+          <div class="study">
+            <h3>Curso de REACTJS</h3>
+            <h4>Udemy</h4>
+            <p></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="contact" id="contac">
+      <h2>Contacto</h2>
+
+      <form class="form" action="">
+        <div class="field">
+          <label>Nombre y Apellido:</label>
+          <input class="input" type="text" name="nombre" />
+        </div>
+
+        <div class="field">
+          <label for="nombre">Email:</label>
+          <input class="input" type="email" name="email" />
+        </div>
+
+        <div class="field">
+          <label for="mesaje">Mensaje:</label>
+          <textarea class="input-area" name="mensaje" id=""></textarea>
+        </div>
+
+        <input
+          class="contact__btn-submit"
+          type="submit"
+          onclick=""
+          value="ENVIAR"
+        />
+      </form>
+    </section>
+
+    <footer>
+      <div class="footer__enlace">
+        <ul>
+          <li>
+            <a href="https://github.com/maxiivandlf" target="_blank"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/maxiivandlf" target="_blank"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:maximilianoivandelafuente@gmail.com">
+              <ion-icon name="mail-unread-outline"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+540380154556656">
+              <ion-icon name="call-outline"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a class="btnup" href="#inicio"
+        ><ion-icon name="arrow-up-outline"></ion-icon
+      ></a>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./javascript/index.js"></script>
+  </body>
+</html>

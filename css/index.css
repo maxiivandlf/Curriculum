@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+  --primary: #e94560;
+  --secundary: #0f3460;
+  --bg_sec: #37304e39;
+  --bg: #1a1a2e;
+  --fc_sec: #fffffe;
+  --font_primary: 'Lato', sans-serif;
+}
+/* GLOBALES  */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font_primary);
+  color: var(--fc_sec);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: url(../src/image/Fondo2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5px;
+}
+main,
+h2,
+h1 {
+  text-align: center;
+  color: var(--primary);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+.no_active {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secundary);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 50px;
+}
+
+/* HEADER */
+
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bg_sec);
+  backdrop-filter: blur(20px);
+  gap: 10px;
+  border-radius: 10px;
+  padding-bottom: 35px;
+}
+
+.head .logo {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.head .logo img {
+  border: solid var(--primary) 5px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.head .title {
+  text-align: center;
+}
+
+.head .menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.head .menu .navigation {
+  display: flex;
+  text-align: center;
+  gap: 0.5rem;
+  flex-direction: column;
+  text-transform: uppercase;
+  margin: 5px;
+}
+.head .menu .navigation a ion-icon {
+  padding-right: 5px;
+}
+
+.head .menu .navigation a {
+  padding: 10px;
+  text-decoration: none;
+  background-color: var(--primary);
+
+  border-radius: 5px;
+}
+.head .menu .navigation a:hover {
+  box-shadow: 0px 1px 3px 4px var(--fc_sec);
+}
+.head .menu button {
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  right: 10px;
+  font-size: 2em;
+  background-color: transparent;
+  border: none;
+}
+.head .menu button:hover {
+  transform: scale(1.2);
+}
+
+.no_active {
+  display: none;
+}
+@media (min-width: 769px) {
+  .head {
+    flex-direction: row;
+    padding-bottom: 0px;
+  }
+
+  .head .menu .navigation {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .head .menu button {
+    top: 10px;
+  }
+}
+
+/* ###################################### */
+main {
+  background-color: var(--bg_sec);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  gap: 10px;
+}
+
+/* ############################# */
+/* Seccion sobre mi */
+
+/* ################### */
+/* Seccion de Skills */
+
+.skills {
+  margin: 2rem auto;
+}
+
+.skills ul {
+  padding: 0;
+  list-style: none;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.skill label {
+  font-size: 1rem;
+}
+.skill ion-icon {
+  padding: 0px;
+  margin: 0px;
+  font-size: 50px;
+}
+progress {
+  border-radius: 7px;
+  width: 70%;
+  height: 10px;
+}
+progress::-webkit-progress-bar {
+  background-color: var(--bg_sec);
+  border-radius: 7px;
+}
+progress::-webkit-progress-value {
+  background-color: var(--primary);
+  border-radius: 7px;
+}
+
+/* ################### */
+/* Seccion de Content */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.job,
+.study {
+  border-radius: 20px;
+  padding: 10px;
+}
+.job,
+.study > h3,
+h4 {
+  margin: 5px 0px;
+}
+
+.job p,
+.study p {
+  margin-left: 10px;
+  color: var(--fc_sec);
+}
+
+/* ################### */
+/* Seccion de Contact */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact h2 {
+  margin-bottom: 5px;
+}
+
+.contact .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.contact .form .field {
+  width: 100%;
+}
+.field label {
+  display: inline-block;
+  padding: 10px 0px;
+}
+.contact .form .field .input {
+  width: 100%;
+  background-color: var(--bg);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+}
+.contact .form .input-area {
+  width: 100%;
+  background-color: var(--bg);
+  border: none;
+  min-height: 100px;
+  border-radius: 5px;
+}
+
+.contact__btn-submit {
+  border: none;
+  background-color: var(--primary);
+  color: var(--secundary);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+  width: 150px;
+}
+
+/* ################### */
+/* Seccion de Foter*/
+footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg_sec);
+  backdrop-filter: blur(40px);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 50px;
+  position: sticky;
+  bottom: 0px;
+}
+
+.footer__enlace {
+  width: 100%;
+  margin-left: 5px;
+}
+.footer__enlace ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+footer .btnup ion-icon {
+  position: relative;
+  text-align: left;
+  font-size: 50px;
+  font-weight: 400;
+}
+footer .btnup {
+  position: absolute;
+  background-color: var(--secundary);
+  border-radius: 50%;
+  right: 10px;
+  top: -55px;
+}
+
+@media (min-width: 769px) {
+  main {
+    max-width: 1200px;
+    flex-direction: row;
+  }
+
+  .contact .form {
+    width: 500px;
+  }
+
+  .footer__enlace ul {
+    justify-content: space-evenly;
+  }
+}
