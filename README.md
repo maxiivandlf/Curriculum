@@ -3,4 +3,4 @@
 ### Maximiliano Ivan de la Fuente
 
 
-`Proyecto creación de curriculum utilizando HTML, CSS y JavaScript`
+`Proyecto personal de desarrollo de curriculum vitae utilizando HTML, CSS y JavaScript`
