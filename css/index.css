@@ -272,7 +272,7 @@ h4 {
 .contact__btn-submit {
   border: none;
   background-color: var(--primary);
-  color: var(--secundary);
+  color: var(--fc_sec);
   font-weight: 700;
   font-size: 15px;
   padding: 10px 20px;
