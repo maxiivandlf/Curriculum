@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 :root {
-  --primary: #aa4b6b;
-  --secundary: #6b6b83;
+  --primary: #6b6b83;
+  --secundary: #aa4b6b;
   --bg_sec: #cdbd784d;
   --bg: #383838;
   --font_color: #f2f2f2;
