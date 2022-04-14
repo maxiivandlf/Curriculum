@@ -32,9 +32,11 @@ h2,
 h1 {
   text-align: center;
   color: var(--primary);
+}
+h1,
+h2 {
   text-transform: uppercase;
 }
-
 ul {
   list-style: none;
   padding: 0;
