@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 :root {
-  --primary: #16052c;
-  --secundary: #0f3460;
-  --bg_sec: #37304e39;
-  --bg: #1a1a2e;
-  --fc_sec: #fffffe;
+  --primary: #aa4b6b;
+  --secundary: #6b6b83;
+  --bg_sec: #cdbd784d;
+  --bg: #383838;
+  --font_color: #f2f2f2;
   --font_primary: 'Lato', sans-serif;
 }
 /* GLOBALES  */
@@ -13,7 +13,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: var(--font_primary);
-  color: var(--fc_sec);
+  color: var(--font_color);
 }
 html {
   scroll-behavior: smooth;
@@ -112,7 +112,7 @@ ul {
   border-radius: 5px;
 }
 .head .menu .navigation a:hover {
-  box-shadow: 0px 1px 3px 4px var(--fc_sec);
+  box-shadow: 0px 1px 3px 4px var(--font_color);
 }
 .head .menu button {
   display: block;
@@ -226,7 +226,7 @@ h4 {
 .job p,
 .study p {
   margin-left: 10px;
-  color: var(--fc_sec);
+  color: var(--font_color);
 }
 
 /* ################### */
@@ -275,7 +275,7 @@ h4 {
 .contact__btn-submit {
   border: none;
   background-color: var(--primary);
-  color: var(--fc_sec);
+  color: var(--font_color);
   font-weight: 700;
   font-size: 15px;
   padding: 10px 20px;
