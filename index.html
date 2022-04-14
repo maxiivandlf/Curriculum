@@ -158,20 +158,24 @@
     <section class="contact" id="contac">
       <h2>Contacto</h2>
 
-      <form class="form" action="" method="post">
+      <form
+        class="form"
+        action="https://formsubmit.co/contacto.maxiiv@gmail.com"
+        method="post"
+      >
         <div class="field">
-          <label>Nombre y Apellido:</label>
-          <input class="input" type="text" name="nombre" />
+          <label for="nombre">Nombre y Apellido:</label>
+          <input class="input" type="text" name="nombre" required />
         </div>
 
         <div class="field">
-          <label for="nombre">Email:</label>
-          <input class="input" type="email" name="email" />
+          <label for="email">Email:</label>
+          <input class="input" type="email" name="email" required />
         </div>
 
         <div class="field">
           <label for="mesaje">Mensaje:</label>
-          <textarea class="input-area" name="mensaje" id=""></textarea>
+          <textarea class="input-area" name="mensaje" id="" required></textarea>
         </div>
 
         <input
