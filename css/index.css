@@ -19,7 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: url(../src/image/Fondo2.jpg);
+  background-color: #1a1a2e;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
