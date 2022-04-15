@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 :root {
-  --primary: #066163;
-  --secundary: #cdbe78;
-  --bg_sec: #f2f2f24d;
-  --bg: #383838;
-  --font_color: #f1ddbf;
+  --primary: #f45355;
+  --secondary: #5f34bc;
+  --bg_glass: #181d3dd8;
+  --bg: #0a0f2b;
+  --title: #ffffff;
+  --font_color: #bbd5f0;
   --font_primary: 'Lato', sans-serif;
 }
 /* GLOBALES  */
@@ -19,19 +20,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: var(--bg);
-  background: -webkit-linear-gradient(
-    to bottom,
-    var(--primary),
-    #6b6b83,
-    var(--secundary)
-  );
-  background: linear-gradient(
-    to bottom,
-    var(--primary),
-    #6b6b83,
-    var(--secundary)
-  );
+  background-color: var(--bg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,7 +30,7 @@ main,
 h2,
 h1 {
   text-align: center;
-  color: var(--primary);
+  color: var(--title);
 }
 h1,
 h2 {
@@ -60,7 +49,7 @@ ul {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--secundary);
+  background: var(--secondary);
   border-radius: 50px;
 }
 
@@ -76,7 +65,7 @@ ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--bg_sec);
+  background-color: var(--bg_glass);
   backdrop-filter: blur(20px);
   gap: 10px;
   border-radius: 10px;
@@ -157,7 +146,7 @@ ul {
 
 /* ###################################### */
 main {
-  background-color: var(--bg_sec);
+  background-color: var(--bg_glass);
   backdrop-filter: blur(20px);
   border-radius: 10px;
   margin: 0 auto;
@@ -206,7 +195,7 @@ progress {
   height: 10px;
 }
 progress::-webkit-progress-bar {
-  background-color: var(--bg_sec);
+  background-color: var(--secondary);
   border-radius: 7px;
 }
 progress::-webkit-progress-value {
@@ -247,6 +236,9 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--bg_glass);
+  margin-top: 10px;
+  border-radius: 10px;
 }
 .contact h2 {
   margin-bottom: 5px;
@@ -268,7 +260,7 @@ h4 {
 }
 .contact .form .field .input {
   width: 100%;
-  background-color: var(--bg);
+  background-color: var(--secondary);
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -276,7 +268,7 @@ h4 {
 }
 .contact .form .input-area {
   width: 100%;
-  background-color: var(--bg);
+  background-color: var(--secondary);
   border: none;
   min-height: 100px;
   border-radius: 5px;
@@ -299,7 +291,7 @@ h4 {
 footer {
   display: flex;
   align-items: center;
-  background-color: var(--bg_sec);
+  background-color: var(--bg_glass);
   backdrop-filter: blur(20px);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -319,6 +311,7 @@ footer {
   gap: 10px;
   font-size: 1.5rem;
 }
+
 footer .btnup ion-icon {
   position: relative;
   text-align: left;
@@ -327,7 +320,7 @@ footer .btnup ion-icon {
 }
 footer .btnup {
   position: absolute;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   border-radius: 50%;
   right: 10px;
   top: -55px;
