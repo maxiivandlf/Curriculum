@@ -26,6 +26,14 @@ body {
   background-size: cover;
   margin: 5px;
 }
+
+.dark-mode {
+  --bg_glass: #aab1dbd8;
+  --bg: #cacee8;
+  --title: #000000;
+  --font_color: #1a1e22;
+}
+
 main,
 h2,
 h1 {
@@ -129,6 +137,13 @@ ul {
 .no_active {
   display: none;
 }
+#icon {
+  width: 30px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
 @media (min-width: 769px) {
   .head {
     flex-direction: row;
@@ -141,6 +156,9 @@ ul {
   }
   .head .menu button {
     top: 10px;
+  }
+  #icon {
+    right: 60px;
   }
 }
 
