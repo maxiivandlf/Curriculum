@@ -95,7 +95,17 @@ ul {
 .head .title {
   text-align: center;
 }
-
+.head .btn a {
+  display: block;
+  border: none;
+  background-color: var(--primary);
+  color: var(--font_color);
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 150px;
+  padding: 5px;
+  border-radius: 15px;
+}
 .head .menu {
   display: flex;
   justify-content: center;
