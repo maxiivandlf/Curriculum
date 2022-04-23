@@ -105,6 +105,7 @@ ul {
   width: 150px;
   padding: 5px;
   border-radius: 15px;
+  text-align: center;
 }
 .head .menu {
   display: flex;
